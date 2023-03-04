@@ -3,7 +3,7 @@ Property: rollNumber, name, course, marks1, marks2, marks3
 Methods: calculateTotal(), calculateAverage(), calculateGrade()
 */
 //Store the student file in a package student;
-package student; 
+package student;
 public class Student{
     private int rollNumber;
     private String name;
