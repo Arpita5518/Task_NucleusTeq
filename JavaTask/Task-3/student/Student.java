@@ -5,10 +5,10 @@ Methods: calculateTotal(), calculateAverage(), calculateGrade()
 //Store the student file in a package student;
 package student; 
 public class Student{
-    int rollNumber;
-    String name;
-    String course;
-    double marks1, marks2, marks3;
+    private int rollNumber;
+    private String name;
+    private String course;
+    private double marks1, marks2, marks3;
     public Student(int rollNumber, String name, String course, double marks1, double marks2, double marks3){
         this.rollNumber=rollNumber;
         this.name=name;
