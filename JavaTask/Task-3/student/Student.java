@@ -80,6 +80,4 @@ public class Student{
 public String toString(){
      return "Roll Number :" +rollNumber +"\nName :" + name + "\nCourse :" + course +"\nMarks1 :" + marks1 +"\nMarks2 :" + marks2+"\nMarks3 :" + marks3 +"\nGrade : "+ calculateGrade(); 
 }
-
-    
 }

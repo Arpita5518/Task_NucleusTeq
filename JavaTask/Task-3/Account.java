@@ -72,25 +72,25 @@ class Account{
 }
 class SavingsAccount extends Account {
     void withdraw(){
-
+        System.out.println("Withdraw..");
     }
     void fixedDeposit(){
-
+        System.out.println("fixedDeposit..");
     }
     void deposit(){
-
+        System.out.println("deposit..");
     }
        
 }
 class LoanAccount extends Account{
     void payEMI(){
-
+        System.out.println("payEMI..");
     }
     void topUpLoan(){
-
+        System.out.println("topUpLoan..");
     }
     void repayment(){
-
+        System.out.println("repayment..");
     } 
 }
     

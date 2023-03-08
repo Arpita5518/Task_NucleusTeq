@@ -1,19 +1,29 @@
-
+import student.Student;
+import java.util.Scanner;
 //Create class StudentTest with main method for calling Student class.
 public class StudentTest{
     public static void main(String[] args) {
 //StudentTest should contain atleast 5 student objects with different grades.
-        Student obj1 = new Student(1, "Arpita", "Computer Science", 90, 87, 92);
-        Student obj2 = new Student(2, "Mansi", "English", 93, 97, 88);     
-        Student obj3 = new Student(3, "Akanksha", "Korean", 91, 87, 72);
-        Student obj4 = new Student(4, "Laxmi", "Science", 80, 77, 99);
-        Student obj5 = new Student(5, "Poonam", "Maths", 89, 88, 90);
+        Scanner sc = new Scanner(System.in);
+        Student[] student = new Student[1];
+        for(int i=0; i<student.length; i++){
+        int rollNumber = (int)(Math.random()*100); 
+        System.out.print("Enter Student Name :");
+        String name = sc.nextLine(); 
+        System.out.print("Enter Student Course :");
+        String course =sc.nextLine();
+        System.out.println("Enter student marks :");
+        double marks1 = sc.nextDouble();
+        double marks2 = sc.nextDouble();
+        double marks3 = sc.nextDouble();
+        student [i] = new Student(rollNumber, name, course, marks1, marks2, marks3);
+        }
+
 //use toString() method to print the student details.
 //Also display grades of each student.
-        System.out.println(obj1);
-        System.out.println(obj2);
-        System.out.println(obj3);
-        System.out.println(obj4);
-        System.out.println(obj5);
+        for(int i=0; i<student.length; i++){
+            System.out.println(student[i]);
+        }
+        sc.close();
     }
 }
