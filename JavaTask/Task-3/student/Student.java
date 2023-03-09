@@ -5,11 +5,11 @@ Methods: calculateTotal(), calculateAverage(), calculateGrade()
 //Store the student file in a package student;
 package student;
 public class Student{
-    private int rollNumber;
+    private String rollNumber;
     private String name;
     private String course;
     private double marks1, marks2, marks3;
-    public Student(int rollNumber, String name, String course, double marks1, double marks2, double marks3){
+    public Student(String rollNumber, String name, String course, double marks1, double marks2, double marks3){
         this.rollNumber=rollNumber;
         this.name=name;
         this.course=course;
@@ -40,10 +40,10 @@ public class Student{
         }
       }
     //Create getter and setter methods.
-    public int getrollNumber(){
+    public String getrollNumber(){
         return rollNumber;
     }
-    public void setrollNumber(int rollNumber){
+    public void setrollNumber(String rollNumber){
         this.rollNumber=rollNumber;
     }
     public String getName(){

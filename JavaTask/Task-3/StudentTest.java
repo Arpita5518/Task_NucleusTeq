@@ -1,13 +1,20 @@
 import student.Student;
 import java.util.Scanner;
+import java.util.HashSet;
 //Create class StudentTest with main method for calling Student class.
 public class StudentTest{
     public static void main(String[] args) {
 //StudentTest should contain atleast 5 student objects with different grades.
         Scanner sc = new Scanner(System.in);
         Student[] student = new Student[1];
+        HashSet <String> set = new HashSet<>();
+        String rollNumber;
         for(int i=0; i<student.length; i++){
-        int rollNumber = (int)(Math.random()*100); 
+            do {
+                rollNumber = Integer.toHexString((int)(Math.random()*10000));
+                if(!set.contains(rollNumber)){set.add(rollNumber); break;
+                }
+            } while (true);      
         System.out.print("Enter Student Name :");
         String name = sc.nextLine(); 
         System.out.print("Enter Student Course :");
