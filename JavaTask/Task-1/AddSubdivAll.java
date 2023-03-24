@@ -27,5 +27,6 @@ public class AddSubdivAll{
         System.out.println("Multiplication of Two Number :"+cal.mul(num1,num2));
         System.out.println("Divition of Two Number :"+cal.div(num1,num2));
         System.out.println("remainder of Two Number :"+cal.rem(num1,num2));
+        sc.close();
     }
 }

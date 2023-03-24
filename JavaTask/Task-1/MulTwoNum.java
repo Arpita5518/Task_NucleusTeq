@@ -8,5 +8,6 @@ public class MulTwoNum {
        System.out.println("Enter Second Number :");
        int num2 = sc.nextInt();
        System.out.println("Multiplication of Two Number :" +(num1*num2)); 
+       sc.close();
     }
 }

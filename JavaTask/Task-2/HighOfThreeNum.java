@@ -11,5 +11,6 @@ public class HighOfThreeNum {
     int num3 = sc.nextInt();
     int highest = num1 > num2 ? (num1 > num3 ? num1 : num3) : (num2 > num3 ? num2 : num3);
     System.out.println("The highest number is: " + highest);
+    sc.close();
   }
 }

@@ -8,6 +8,6 @@ public class DivTwoNum {
         System.out.println("Enter Second Number : ");
         int num2 =scanner.nextInt();
         System.out.println("Division of Two Num : " +(num1/num2));
-        
+        scanner.close();
     }
 }

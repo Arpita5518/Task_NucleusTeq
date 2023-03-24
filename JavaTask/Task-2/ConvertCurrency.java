@@ -26,6 +26,7 @@ public class ConvertCurrency {
         break;
         default:
         System.out.println("Invalid input..");
+        sc.close();
     }
   }
 }

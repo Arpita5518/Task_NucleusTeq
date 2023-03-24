@@ -23,5 +23,6 @@ public class ValidInput {
     } else {
       System.out.println("The input PIN number is not valid.");
     }
+    sc.close();
   }
 }
