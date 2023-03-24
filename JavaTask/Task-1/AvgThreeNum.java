@@ -10,5 +10,6 @@ public class AvgThreeNum {
        System.out.println("Enter Third Number :");
        int num3 = sc.nextInt();
        System.out.println("Average of three Number :" +(num1+num2+num3)/3);
+       sc.close();
     }
 }

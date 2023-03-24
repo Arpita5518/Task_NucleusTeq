@@ -9,5 +9,6 @@ public class AddTwoNum{
             System.out.println("Enter Number : ");
             int num2 =sc.nextInt();
             System.out.println("Sum of Two Number is :" + (num1+num2));
+            sc.close();
         }
 }

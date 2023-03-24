@@ -13,5 +13,6 @@ public class CalSimpleInterest {
     double compoundInterest = principal * Math.pow((1 + rate/100), time) - principal;
     System.out.println("Simple interest = " + simpleInterest);
     System.out.println("Compound interest = " + compoundInterest);
+    sc.close();
   }
 }
