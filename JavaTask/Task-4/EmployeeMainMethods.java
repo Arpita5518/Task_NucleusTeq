@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.HashSet;
 import java.util.Scanner;
-class EmployeeMainMethods {
+public class EmployeeMainMethods {
     public void addEmployee(Scanner sc, HashSet<String> idset) {
         System.out.print("Enter Employee id : ");      
         String id = sc.nextLine();
